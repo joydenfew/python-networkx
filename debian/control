@@ -1,0 +1,58 @@
+Source: networkx
+Section: python
+Priority: optional
+Maintainer: Jayden Hewer <jfh13@students.waikato.ac.nz>
+Build-Depends: debhelper (>=9),
+               dh-python,
+               python-all (>= 2.6.6-3~),
+               python-setuptools,
+               python3-all,
+               python3-setuptools,
+               python-nose (>=0.10.1),
+               python3-nose (>=0.10.1),
+               python-decorator (>=4.1.0),
+               python3-decorator (>=4.1.0)
+Standards-Version: 3.9.6
+Homepage: https://networkx.github.io/
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.4
+#Vcs-Git: git://anonscm.debian.org/collab-maint/networkx.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/networkx.git
+
+Package: python-networkx
+Architecture: all
+Depends: python3-decorator (>=4.1.0), ${python:Depends}, ${misc:Depends}
+Suggests: python-networkx-doc
+Description: tool to create, manipulate and study complex networks (Python2)
+ NetworkX is a Python-based package for the creation, manipulation, and
+ study of the structure, dynamics, and functions of complex networks.
+ .
+ The structure of a graph or network is encoded in the edges (connections,
+ links, ties, arcs, bonds) between nodes (vertices, sites, actors). If
+ unqualified, by graph it's meant a simple undirected graph, i.e. no
+ self-loops and no multiple edges are allowed. By a network it's usually
+ meant a graph with weights (fields, properties) on nodes and/or edges.
+ .
+ The potential audience for NetworkX includes: mathematicians, physicists,
+ biologists, computer scientists, social scientists.
+ .
+ This package contains the Python 2 version of NetworkX.
+
+Package: python3-networkx
+Architecture: all
+Depends: python3-decorator (>=4.1.0), ${python3:Depends}, ${misc:Depends}
+Suggests: python-networkx-doc
+Description: tool to create, manipulate and study complex networks (Python3)
+ NetworkX is a Python-based package for the creation, manipulation, and
+ study of the structure, dynamics, and functions of complex networks.
+ .
+ The structure of a graph or network is encoded in the edges (connections,
+ links, ties, arcs, bonds) between nodes (vertices, sites, actors). If
+ unqualified, by graph it's meant a simple undirected graph, i.e. no
+ self-loops and no multiple edges are allowed. By a network it's usually
+ meant a graph with weights (fields, properties) on nodes and/or edges.
+ .
+ The potential audience for NetworkX includes: mathematicians, physicists,
+ biologists, computer scientists, social scientists.
+ .
+ This package contains the Python 3 version of NetworkX.

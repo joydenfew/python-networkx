@@ -1,0 +1,25 @@
+python-networkx for Debian
+--------------------------
+
+As stated in the changelog, I put in Recommends: all the packages needed
+to get the networkx/tests/test.py script run OK.
+
+To run the testsuite:
+  cd /usr/share/python-support/python-networkx/networkx/tests
+  python test.py
+
+Another way is to use a python interpreter and execute:
+  import networkx.tests
+  networkx.tests.run()
+
+To list the recommended packages:
+  LANG=C apt-cache show python-networkx | grep ^Recommends:
+
+Some examples won't be functional: they depend on some files that aren't
+shipped by upstream because modifications are not allowed, but can be
+found easily by using a web search engine:
+  miles.dat.gz
+  roget.dat.gz
+  words.dat.gz
+
+ -- Cyril Brulebois <cyril.brulebois@enst-bretagne.fr>  Sat, 28 Jul 2007 13:23:14 +0200

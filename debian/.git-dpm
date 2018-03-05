@@ -1,0 +1,11 @@
+# see git-dpm(1) from git-dpm package
+dab8178345ed3c93414f040ad1d51c9f3bc4790a
+dab8178345ed3c93414f040ad1d51c9f3bc4790a
+d17c01666c785cb70a3a0ad9af7b6ce0fbc6e143
+d17c01666c785cb70a3a0ad9af7b6ce0fbc6e143
+python-networkx_1.11.orig.tar.gz
+ac24380b13dfe92633370ad2091c0c04b6d098a2
+1315737
+debianTag="debian/%e%v"
+patchedTag="patched/%e%v"
+upstreamTag="upstream/%e%u"
